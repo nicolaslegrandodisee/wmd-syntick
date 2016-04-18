@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('api/renters', 'APIController@postRenters')->name('postRenters');
+Route::get('api/renters/{renterID}/complains', 'APIController@getRenterComplains')->name('getRenterComplains');
+Route::post('api/renters/{renterID}/complains', 'APIController@postRenterComplains')->name('getRenterComplains');
+Route::get('api/owners', 'APIController@getOwners')->name('getOwners');
+Route::post('api/owners', 'APIController@postOwners')->name('postOwners');
+Route::get('api/renters', 'APIController@getOwnerComplains')->name('getOwnerComplains');
+Route::put('api/renters', 'APIController@putOwnerComplains')->name('putOwnerComplains');
