@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea362a9-cf66-4e4f-a4f8-4de131a4fd39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/js/variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/synd.sql" afterPath="$PROJECT_DIR$/Database/synd.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/templates/complain-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/App/Syntick/www/index.html" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/App/Syntick/www/js/app.js" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/App/Syntick/www/templates/account.html" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/templates/account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html" afterPath="$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html" />
     </list>
     <ignored path="ionicProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="343">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -49,18 +55,8 @@
       <file leaf-file-name="complains.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="107" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
+            <state relative-caret-position="0">
+              <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -69,8 +65,8 @@
       <file leaf-file-name="factories.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -86,11 +82,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="account.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/account.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+              <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="complain-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/complain-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -99,8 +125,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+            <state relative-caret-position="34">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -115,13 +141,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Source/App/Syntick/www/templates/tabs.html" />
-        <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js" />
-        <option value="$PROJECT_DIR$/Source/App/Syntick/www/index.html" />
         <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/variables.js" />
-        <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/app.js" />
-        <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js" />
-        <option value="$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html" />
         <option value="$PROJECT_DIR$/Source/App/Syntick/www/templates/account.html" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/templates/login.html" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/templates/complain-detail.html" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/index.html" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/Source/App/Syntick/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -357,12 +385,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1460970899369</updated>
-      <workItem from="1460970901221" duration="2589000" />
+      <workItem from="1460970901221" duration="3190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2589000" />
+    <option name="totallyTimeSpent" value="3190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -424,26 +452,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="107" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
+        <state relative-caret-position="238">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -456,26 +468,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/factories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html">
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/tabs.html">
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/complain-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -483,7 +503,31 @@
     <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/account.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/templates/complains.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/App/Syntick/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
           <folding />
         </state>
       </provider>

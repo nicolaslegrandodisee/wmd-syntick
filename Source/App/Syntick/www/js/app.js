@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.factories', 'syntick.variables'])
+angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.factories', 'syntickApp.variables'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -32,10 +32,15 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/syntick',
     abstract: true,
     templateUrl: 'templates/tabs.html'
+  })
+
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html'
   })
 
   // Each tab has its own nav history stack:
@@ -45,7 +50,17 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
     views: {
       'tab-complains': {
         templateUrl: 'templates/complains.html',
-        controller: 'ChatsCtrl'
+        controller: 'ComplainsCtrl'
+      }
+    }
+  })
+
+  .state('tab.complain.detail', {
+    url: '/complains/id',
+    views: {
+      'tab-complains': {
+        templateUrl: 'templates/complain-detail.html',
+        controller: 'ComplainDetailCtrl'
       }
     }
   })
@@ -62,6 +77,6 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/syntick/complains');
+  $urlRouterProvider.otherwise('/syntick/login');
 
 });
