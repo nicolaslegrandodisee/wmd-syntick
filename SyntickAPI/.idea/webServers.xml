@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="57325237-3b6b-4833-9cad-fd4354272109" name="Syntick cpanel" url="http://cpanel.ikdoeict.be">
+        <fileTransfer host="cpanel.ikdoeict.be" port="22" rootFolder="/home/r0447394/public_html/syntick" accessType="SFTP" password="dfc2dfdbdf99df99dfc9dfc6dfdcdfc0" username="r0447394">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
