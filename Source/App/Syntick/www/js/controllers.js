@@ -5,7 +5,7 @@ angular.module('syntickApp.controllers', [])
 })
 
 .controller('ComplainDetailCtrl', function($scope) {
-
+  console.log('Controller');
 })
 
 .controller('AccountCtrl', function($scope) {

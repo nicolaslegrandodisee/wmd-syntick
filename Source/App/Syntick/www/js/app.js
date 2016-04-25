@@ -55,8 +55,8 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
     }
   })
 
-  .state('tab.complain.detail', {
-    url: '/complains/id',
+  .state('tab.complains-detail', {
+    url: '/complains/:id',
     views: {
       'tab-complains': {
         templateUrl: 'templates/complain-detail.html',
@@ -77,6 +77,6 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/syntick/login');
+  //$urlRouterProvider.otherwise('/syntick/account');
 
 });
