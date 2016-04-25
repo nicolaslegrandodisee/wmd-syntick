@@ -13,15 +13,10 @@ angular.module('syntickApp.controllers', [])
 			$scope.complain = complain;
 			$id = complain.complainId;
 			complain.title = "Vaatwas werkt niet!!!";
-<<<<<<< HEAD
-			/*syntickFac.updateComplain($id, complain, function(complain) {
-				console.log(complain);
-			})*/
-=======
 			syntickFac.updateComplain($id, complain, function(complain) {
 				console.log(complain);
 			})
->>>>>>> 470269cebddca5dffca1561ec8a432ad5fa2fee8
+
 		});
 	})
 
