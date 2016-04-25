@@ -1,5 +1,54 @@
-<ion-view view-title="Complain detail">
-	<ion-content>
-		<p>Hallo</p>
-	</ion-content>
+
+<ion-view view-title="Complain" class="complain-detail-page">
+
+<ion-header-bar class="bar-royal">
+	<div class="h1 title">Complain Title</div>
+</ion-header-bar>
+<ion-content>
+
+<ion-content>
+<div class="my-page-content">
+
+<div class="list">
+	<label class="item item-input item-stacked-label">
+		<span class="input-label">Title</span>
+		<input type="text" placeholder="Tap is broken">
+	</label>
+	<label class="item item-input item-stacked-label">
+		<span class="input-label">Message</span>
+		<input type="text" placeholder="Your problem description . . .">
+	</label>
+
+	<label class="item item-input item-select">
+		<div class="input-label">
+			Priority
+		</div>
+		<select>
+			<option selected>1</option>
+			<option >2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	</label>
+	<label class="item item-input item-select">
+		<div class="input-label">
+			Owner
+		</div>
+		<select>
+			<option>Bob</option>
+			<option selected>Carl</option>
+			<option>Tom</option>
+		</select>
+	</label>
+
+	<div class="padded-container">
+	<button class="button marged button-block button-royal">
+		Save Changes
+	</button>
+	</div>
+
+</div>
+</div>
+</ion-content>
 </ion-view>

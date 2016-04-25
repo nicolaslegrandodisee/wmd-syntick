@@ -1,5 +1,5 @@
 angular.module('syntickApp.factories', [])
-	
+
 	.factory('syntickFac', function ($http, syntickVar) {
 		return {
 			
@@ -141,5 +141,6 @@ angular.module('syntickApp.factories', [])
 					cache:  false
 				}).success(callback);
 			},
+
 		};
 	});
