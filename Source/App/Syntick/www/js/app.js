@@ -23,6 +23,7 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
   });
 })
 
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -54,6 +55,7 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
       }
     }
   })
+
 
   .state('tab.complain-detail', {
     url: '/complains/:id',

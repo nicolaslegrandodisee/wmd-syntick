@@ -2,6 +2,7 @@ angular.module('syntickApp.variables', [])
 
 	.factory('syntickVar', function (){
 		return {
-			api: 'http://admin.zaventemplus.local',
+			api: 'http://syntick.fabriceguillermin.ikdoeict.be/index.php/api',
+
 		};
 	});
