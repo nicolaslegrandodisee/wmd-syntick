@@ -23,7 +23,7 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -77,6 +77,8 @@ angular.module('syntickApp', ['ionic', 'syntickApp.controllers', 'syntickApp.fac
   });
 
   // if none of the above states are matched, use this as the fallback
-  //$urlRouterProvider.otherwise('/syntick/account');
+  $urlRouterProvider.otherwise('/syntick/account');
+
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 });
