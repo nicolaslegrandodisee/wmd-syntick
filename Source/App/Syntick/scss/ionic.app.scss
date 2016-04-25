@@ -15,9 +15,53 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+/* Start my style */
+
+//Vars
+$mainColor:$royal;
+
+
+.content-background-dark{
+	background:$dark;
+}
+
+.color-royal{
+	color:$mainColor !important;
+}
+
+.my-page-content{
+	background:$dark;
+	width:100%;
+	height:100%;
+}
+.item h2{
+margin-bottom:10px;
+}
+
+.item h2{
+margin-bottom:10px;
+}
+
+
+.padded-container{
+padding:10px;
+}
+
+/* Account page */
+.account-page .list{
+	background:$light;
+}
+
+/* login page */
+
+.login-page .list{
+	background:$light;
+}
