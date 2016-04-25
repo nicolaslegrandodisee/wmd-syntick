@@ -12,11 +12,13 @@ angular.module('syntickApp.controllers', [])
 			console.log(complain);
 			$scope.complain = complain;
 			$id = complain.complainId;
-			complain.title = "Vaatwas werkt niet!!!";
+		});
+
+		$scope.formSubmit = function(formComplain) {
 			syntickFac.updateComplain($id, complain, function(complain) {
 				console.log(complain);
-			})
-		});
+			});
+		}
 	})
 
 	.controller('AccountCtrl', function ($scope) {
