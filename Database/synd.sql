@@ -8,20 +8,20 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema r0447394_syntick
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema r0447394_syntick
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `r0447394_syntick` DEFAULT CHARACTER SET utf8 ;
+USE `r0447394_syntick` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Owners`
+-- Table `r0447394_syntick`.`Owners`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Owners` (
-  `ownerId` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `r0447394_syntick`.`Owners` (
+  `ownerId` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(150) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `telephone` VARCHAR(45) NOT NULL,
@@ -30,10 +30,10 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Renters`
+-- Table `r0447394_syntick`.`Renters`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Renters` (
-  `renterId` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `r0447394_syntick`.`Renters` (
+  `renterId` INT NOT NULL AUTO_INCREMENT,
   `address` VARCHAR(45) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(150) NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Renters` (
   INDEX `fk_Renters_Owners1_idx` (`ownerId` ASC),
   CONSTRAINT `fk_Renters_Owners1`
     FOREIGN KEY (`ownerId`)
-    REFERENCES `mydb`.`Owners` (`ownerId`)
+    REFERENCES `r0447394_syntick`.`Owners` (`ownerId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -50,10 +50,10 @@ DEFAULT CHARACTER SET = big5;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Complains`
+-- Table `r0447394_syntick`.`Complains`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Complains` (
-  `complainId` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `r0447394_syntick`.`Complains` (
+  `complainId` INT NOT NULL AUTO_INCREMENT,
   `ownerId` INT NOT NULL,
   `renterId` INT NOT NULL,
   `title` VARCHAR(45) NOT NULL,
@@ -67,12 +67,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Complains` (
   PRIMARY KEY (`complainId`),
   CONSTRAINT `fk_Complains_Renters`
     FOREIGN KEY (`renterId`)
-    REFERENCES `mydb`.`Renters` (`renterId`)
+    REFERENCES `r0447394_syntick`.`Renters` (`renterId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Complains_Owners1`
     FOREIGN KEY (`ownerId`)
-    REFERENCES `mydb`.`Owners` (`ownerId`)
+    REFERENCES `r0447394_syntick`.`Owners` (`ownerId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

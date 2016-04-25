@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => 'mysql.localhost',
 
     /*
     |--------------------------------------------------------------------------
@@ -51,14 +51,26 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
-
+        'mysql.localhost' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'port' => '3306',
+            'database' => 'r0447394_syntick',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'cpanel.ikdoeict.be'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'r0447394_syntick'),
-            'username' => env('DB_USERNAME', 'r0447394_syntick'),
-            'password' => env('DB_PASSWORD', 'Azerty123'),
+            'host' => 'mysql.ikdoeict.be',
+            'port' => '3306',
+            'database' => 'r0447394_syntick',
+            'username' => 'r0447394_syntick',
+            'password' => 'Azerty123',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
