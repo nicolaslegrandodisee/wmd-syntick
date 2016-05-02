@@ -1,21 +1,26 @@
 <ion-view view-title="Complains">
-	<div class="my-page-content">
-		<ion-header-bar class="bar-royal">
-			<div class="h1 title">Complaints</div>
-			<button class="button button-clear ion-android-add"></button>
-		</ion-header-bar>
-
-		<ion-content>
-			<div class="list" ng-repeat="complain in complains">
-				<a class="item" href="/#/syntick/complains/{{ complain.complainId }}">
-					<h2 class="color-royal">{{ complain.title }}</h2>
-					<p>Created on: {{  complain.createdOn | date:'dd-MM-yyyy' }}</p>
-					<p ng-if="complain.solved==1">Status: Solved</p>
-					<p ng-if="complain.solved==0">Status: Unsolved</p>
-				</a>
+<div class="my-page-content">
+	<ion-header-bar class="bar-royal">
+	<div class="h1 title">Complaints</div>
+	<button class="button my-add button-clear ion-android-add"></button>
+	</ion-header-bar>
+	<ion-content class="list">
+	<div  ng-repeat="complain in complains">
+		<a class="item" href="/#/syntick/complains/{{ complain.complainId }}">
+			<h2 class="color-royal">{{ complain.title }}</h2>
+			<div  class="resolve">
+				<label onclick="return false;" class="toggle toggle-royal toggle-assertive">
+					<input  type="checkbox">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
 			</div>
-		</ion-content>
-
+			<p>Created on: {{  complain.createdOn | date:'dd-MM-yyyy' }}</p>
+			<p ng-if="complain.solved==1">Status: Solved</p>
+			<p ng-if="complain.solved==0">Status: Unsolved</p>
+		</a>
 	</div>
+	</ion-content>
+</div>
 </ion-view>
-

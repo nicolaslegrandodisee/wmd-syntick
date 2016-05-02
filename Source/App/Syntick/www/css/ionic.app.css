@@ -9763,3 +9763,11 @@ a.button {
 /* Complain Detail page */
 .complain-detail-page .list {
   background: #fff; }
+
+.resolve {
+  float: right; }
+
+.my-add:before {
+  font-size: 40px;
+  position: relative;
+  bottom: 5px; }

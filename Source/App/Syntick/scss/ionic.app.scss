@@ -50,7 +50,9 @@ margin-bottom:10px;
 margin-bottom:10px;
 }
 
+.item{
 
+}
 .padded-container{
 padding:10px;
 }
@@ -70,4 +72,18 @@ padding:10px;
 .complain-detail-page .list{
 	background:$light;
 
+}
+
+.resolve{
+	float:right;
+}
+
+.my-add{
+
+
+}
+.my-add:before{
+	font-size:40px;
+	position: relative;
+	bottom:5px;
 }
