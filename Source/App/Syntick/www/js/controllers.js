@@ -10,19 +10,17 @@ angular.module('syntickApp.controllers', [])
 	.controller('ComplainDetailCtrl', function ($scope, syntickFac) {
 		syntickFac.getComplain(1, function (complain) {
 			console.log(complain);
-			$scope.complain = complain;
+			$scope.formComplain = complain;
 			$id = complain.complainId;
 		});
 
 		$scope.formSubmit = function(formComplain) {
-			syntickFac.updateComplain($id, complain, function(complain) {
+			syntickFac.updateComplain($id, formComplain, function(complain) {
 				console.log(complain);
 			});
 		}
 	})
 
 	.controller('AccountCtrl', function ($scope) {
-		$scope.settings = {
-			enableFriends: true
-		};
+		
 	});

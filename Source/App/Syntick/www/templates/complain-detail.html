@@ -4,7 +4,6 @@
 <ion-header-bar class="bar-royal">
 	<div class="h1 title">Complain Title</div>
 </ion-header-bar>
-<ion-content>
 
 <ion-content>
 <div class="my-page-content">
@@ -12,38 +11,38 @@
 <div class="list">
 	<label class="item item-input item-stacked-label">
 		<span class="input-label">Title</span>
-		<input type="text" placeholder="Tap is broken">
+		<input type="text" placeholder="Tap is broken" data-ng-model="formComplain.title">
 	</label>
 	<label class="item item-input item-stacked-label">
 		<span class="input-label">Message</span>
-		<input type="text" placeholder="Your problem description . . .">
+		<input type="text" placeholder="Your problem description . . ." data-ng-model="formComplain.message">
 	</label>
 
 	<label class="item item-input item-select">
 		<div class="input-label">
 			Priority
 		</div>
-		<select>
-			<option selected>1</option>
-			<option >2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
+		<select data-ng-model="formComplain.priority">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
 		</select>
 	</label>
 	<label class="item item-input item-select">
 		<div class="input-label">
 			Owner
 		</div>
-		<select>
-			<option>Bob</option>
-			<option selected>Carl</option>
-			<option>Tom</option>
+		<select data-ng-model="formComplain.owner">
+			<option value="1">Bob</option>
+			<option value="2">Carl</option>
+			<option value="3">Tom</option>
 		</select>
 	</label>
 
 	<div class="padded-container">
-	<button class="button marged button-block button-royal">
+	<button class="button marged button-block button-royal" ng-click="formSubmit(formComplain)">
 		Save Changes
 	</button>
 	</div>
